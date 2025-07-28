@@ -1,1 +1,44 @@
 @import "tailwindcss";
+
+/* Fonst */
+.ibm {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Collors */
+
+:root {
+  --primary-color: #2ea98c;
+  --white-color: #f1f7f7;
+}
+/* Primary Color */
+.primaryColor {
+  color: var(--primary-color);
+}
+.bgPrimaryColor {
+  background-color: var(--primary-color);
+}
+
+/* White Color */
+.whiteColor {
+  color: var(--white-color);
+}
+
+/* --------------------- */
+.logoBackground {
+  clip-path: polygon(
+    50% 0%,
+    83% 12%,
+    100% 43%,
+    94% 78%,
+    68% 100%,
+    32% 100%,
+    6% 78%,
+    0% 43%,
+    17% 12%
+  );
+}
