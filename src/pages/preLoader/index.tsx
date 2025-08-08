@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 //
 import TypingText from "../../animations/TypingText";
-import LogoIcon from "../../components/Logo";
+// import LogoIcon from "../../components/LogoCQ";
 //
 import "./index.css";
 
@@ -17,9 +17,10 @@ const PreLoader = () => {
   }, []);
 
   return (
-    <figure className="h-screen w-screen flex items-center justify-center gap-5 bg-[#161616]">
+    <figure className="h-screen w-screen flex items-center justify-center gap-5">
+      <div className="top-0 left-0 absolute z-50 h-screen w-screen flex justify-center items-center backgroundPixelado"></div>
       <div className="flex items-center justify-center h-60 w-60 logoBackground bgPrimaryColor animationFadeIn">
-        <LogoIcon size={150} bg={false} animation={true} />
+        {/* <LogoIcon size={150} bg={false} animation={true} /> */}
       </div>
       <span>{showText && <TypingText text="CodingQuest" />}</span>
     </figure>
