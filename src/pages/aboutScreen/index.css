@@ -1,0 +1,14 @@
+@import "tailwindcss";
+.glasseffect {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.backgroundAbout {
+  background-image: url("../../assets/backgrounds/backgroundAbout.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

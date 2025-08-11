@@ -9,7 +9,7 @@ const HomeScreen = () => {
     // Simular espera de 1s para mostrar o segundo
     setTimeout(() => {
       setSecondRender(true);
-    }, 1000);
+    }, 500);
   }, []);
   return (
     <>

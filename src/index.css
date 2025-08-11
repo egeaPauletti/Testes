@@ -1,13 +1,14 @@
 @import "tailwindcss";
 
 body {
-  background-image: url(./assets/background.png);
+  background-image: url(./assets/backgrounds/background.png);
   background-size: cover;
   background-repeat: no-repeat;
+  font-size: "Roboto", sans-serif;
   overflow: hidden;
 }
 
-/* Fonst */
+/* Fonts */
 .ibm {
   font-family: "IBM Plex Mono", monospace;
 }
@@ -21,8 +22,6 @@ body {
 :root {
   --primary-color: #2ea98c;
   --white-color: #f1f7f7;
-  --button-primary-color: #6c62ff;
-  --button-second-color: #4a3df9;
 }
 /* Primary Color */
 .primaryColor {

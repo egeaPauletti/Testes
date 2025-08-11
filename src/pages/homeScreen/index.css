@@ -32,23 +32,10 @@
 }
 
 .backgroundPixelado {
-  background-image: url(../../assets/pixeladoBackground.png);
+  background-image: url(../../assets/backgrounds/pixeladoBackground.png);
   background-size: contain;
   background-repeat: repeat;
   opacity: 0.5;
-}
-
-.animationDelay1s {
-  animation-delay: 1s;
-}
-.animationDelay3s {
-  animation-delay: 3s;
-}
-.animationDelay4s {
-  animation-delay: 4s;
-}
-.animationDelay6s {
-  animation-delay: 6s;
 }
 
 .underlineAnimado {
@@ -60,10 +47,10 @@
 .underlineAnimado::after {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 3px;
-  bottom: 0;
-  left: 0;
+  width: 80%;
+  height: 2px;
+  bottom: -1%;
+  left: 10%;
   background-color: var(--primary-color);
   transform: scaleX(0);
   transform-origin: bottom right;

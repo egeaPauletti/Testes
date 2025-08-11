@@ -1,12 +1,11 @@
 import { FloatingSquares } from "../../components/FloatingSquares";
-import { IoIosArrowDown } from "react-icons/io";
-import Header from "../../components/Header";
 import WaveText from "../../animations/Wave";
+import HeaderHome from "../../components/HeaderHome";
 export default function ContentIniHome() {
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center relative">
       <div className="absolute top-[2%] left-0 z-100 w-full justify-center items-center flex slideToBottom">
-        <Header />
+        <HeaderHome />
       </div>
       <div className="h-screen w-screen flex justify-center items-center    animationFadeIn">
         <FloatingSquares />
@@ -27,9 +26,6 @@ export default function ContentIniHome() {
             de forma interativa, prática e divertida
           </span>
         </div>
-      </div>
-      <div className="flex items-center justify-center absolute bottom-[10%] text-white text-7xl opacity-20">
-        <IoIosArrowDown />
       </div>
     </div>
   );

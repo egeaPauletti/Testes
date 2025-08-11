@@ -1,20 +1,7 @@
 @import "tailwindcss";
-
-.animationFadeIn {
-  animation: fadeIn 1s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /*  */
 .slideToTop {
-  animation: slideToTop 1s ease-in forwards;
+  animation: slideToTop 0.5s ease-in forwards;
 }
 
 @keyframes slideToTop {
@@ -25,18 +12,7 @@
     transform: translateY(0);
   }
 }
-/*  */
-@keyframes floatingSquares {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
+
 /*  */
 
 .slideToBottom {
@@ -46,6 +22,73 @@
 @keyframes slideToBottom {
   0% {
     transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*  */
+
+.slideToRight {
+  animation: slideToRight 1s ease-in forwards;
+}
+
+@keyframes slideToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.slideToLeft {
+  animation: slideToLeft 1s ease-in forwards;
+}
+
+@keyframes slideToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*  */
+.animationFadeIn {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animationFadeIn2 {
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*  */
+@keyframes floatingSquares {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
   }
   100% {
     transform: translateY(0);
@@ -70,4 +113,40 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/*  */
+.headerAnimation {
+  animation: headerAnimation 1s ease-in-out forwards;
+  width: 3.5%;
+}
+
+@media (min-width: 1322px) {
+  @keyframes headerAnimation {
+    from {
+      /* transform: translateY(100%); */
+      width: 3%;
+    }
+    to {
+      /* transform: translateY(0); */
+      opacity: 1;
+      width: 65%;
+    }
+  }
+}
+@media (max-width: 1322px) {
+  @keyframes headerAnimation {
+    from {
+      /* transform: translateY(100%); */
+      width: 3%;
+    }
+    to {
+      /* transform: translateY(0); */
+      opacity: 1;
+      width: 72%;
+    }
+  }
+}
+.animationsdelay1s {
+  animation-delay: 1s;
 }
