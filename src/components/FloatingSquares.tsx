@@ -14,14 +14,14 @@ import KotlinIcon from "./icons/iconsLanguages/KotlinIcon";
 
 const squarePositions: SquareData[] = [
   { x: 900, y: 200, width: 90, height: 90, icon: <JavaIcon size={50} /> },
-  { x: 1200, y: 600, width: 90, height: 90, icon: <CIcon size={50} /> },
+  { x: 1200, y: 600, width: 90, height: 90, icon: <RubyIcon size={50} /> },
   { x: 1600, y: 300, width: 90, height: 90, icon: <PythonIcon size={50} /> },
   { x: 200, y: 300, width: 90, height: 90, icon: <JSIcon size={50} /> },
   { x: 500, y: 300, width: 70, height: 70, className: "squareOp50" },
   { x: 350, y: 830, width: 90, height: 90, icon: <DartIcon size={50} /> },
   { x: 1400, y: 500, width: 60, height: 60, icon: <KotlinIcon size={30} /> },
   { x: 600, y: 500, width: 60, height: 60, icon: <GOIcon size={30} /> },
-  { x: 1350, y: 100, width: 60, height: 60, icon: <RubyIcon size={30} /> },
+  { x: 1350, y: 100, width: 60, height: 60, icon: <CIcon size={30} /> },
   { x: 1150, y: 400, width: 70, height: 70, className: "squareOp50" },
   {
     x: 1750,

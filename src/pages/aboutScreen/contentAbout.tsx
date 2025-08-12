@@ -1,16 +1,18 @@
-import Header from "../../components/Header";
+// import Header from "../../components/Header";
+import HeaderHome from "../../components/HeaderHome";
 import LogoCQ from "../../components/LogoCQ";
 
 export default function ContentAbout() {
   return (
     <div className="w-screen h-screen flex items-center justify-center">
       <div className="absolute top-[2%] left-0 z-100 w-full justify-center items-center flex ">
-        <Header />
+        {/* <Header /> */}
+        <HeaderHome />
       </div>
       <div className="absolute flex items-center justify-center">
         <div className="w-1/2">
-          <div className="flex flex-col 2xl:gap-15 gap-5">
-            <div className="flex flex-col items-start justify-center w-[60%] border-r-3 py-7 pr-10 border-[#2ea98c] slideToRight">
+          <div className="flex flex-col 2xl:gap-15 gap-12">
+            <div className="flex flex-col items-start justify-center w-[60%]  py-3  2xl:pr-10 border-[#2ea98c] border-r-3 slideToRight">
               <h1 className="primaryColor font-bold text-lg 2xl:text-xl mb-5">
                 O que é a <br />
                 CondingQuest?
@@ -24,7 +26,7 @@ export default function ContentAbout() {
                 recompensador.
               </p>
             </div>
-            <div className="flex flex-col items-start justify-center w-[60%]  2xl:w-[50%] relative -right-[30%] slideToLeft">
+            <div className="flex flex-col items-start justify-center w-[60%]  relative -right-[25%] slideToLeft">
               <h1 className="primaryColor font-bold 2xl:text-lg">
                 Uma Jornada Gamificada
               </h1>
@@ -39,19 +41,27 @@ export default function ContentAbout() {
             </div>
           </div>
         </div>
-        <div className="hidden 2xl:flex animationFadeIn2">
-          <LogoCQ size={412} />
+        <div className="hidden 2xl:flex animationFadeIn2 glasseffect">
+          <LogoCQ size={352} />
         </div>
-        <div className="flex 2xl:hidden animationFadeIn2">
-          <LogoCQ size={312} />
+        <div className="flex 2xl:hidden animationFadeIn2 glasseffect">
+          <LogoCQ size={252} />
         </div>
       </div>
-      <span className="primaryColor font-bold 2xl:text-base text-sm -rotate-90 absolute right-0 bottom-[10%] slideToTop">
+      <span className="primaryColor font-bold 2xl:text-base text-xs -rotate-90 absolute right-0 bottom-[10%] slideToTop">
         CodingQuest
       </span>
-      <div className="absolute flex w-screen h-screen gap-10 justify-start items-end bottom-[5%] left-[5%] slideToBottom">
-        <div className="bgPrimaryColor w-[5%] h-[0.5%]"></div>
-        <div className="bgPrimaryColor w-[5%] h-[0.5%]"></div>
+      <div className="absolute flex w-screen h-screen gap-10 justify-start items-end bottom-[5%] left-[5%] slideToRight">
+        <div className="bgPrimaryColor w-[5%] h-[0.25%]"></div>
+        <div className="bgPrimaryColor w-[5%] h-[0.25%]"></div>
+      </div>
+      <div className="absolute flex w-screen h-screen gap-10 justify-start items-end bottom-[5%] left-[30%] slideToRight">
+        <div className="bgPrimaryColor w-[5%] h-[0.25%]"></div>
+        <div className="bgPrimaryColor w-[5%] h-[0.25%]"></div>
+      </div>
+      <div className="absolute flex w-screen h-screen gap-10 justify-start items-end bottom-[5%] left-[55%] slideToRight">
+        <div className="bgPrimaryColor w-[5%] h-[0.25%]"></div>
+        <div className="bgPrimaryColor w-[5%] h-[0.25%]"></div>
       </div>
     </div>
   );

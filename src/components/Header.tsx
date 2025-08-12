@@ -36,11 +36,6 @@ export default function Header() {
             Quem pode Jogar?
           </button>
         </Link>
-        <Link to={"/"}>
-          <button className="text-white underlineAnimado cursor-pointer">
-            Contato
-          </button>
-        </Link>
         <button className="text-white underlineAnimado cursor-pointer">
           Desenvolvedores
         </button>

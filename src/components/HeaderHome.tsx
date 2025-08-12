@@ -3,7 +3,7 @@ import LogoCQ from "./LogoCQ";
 
 export default function HeaderHome() {
   return (
-    <header className="w-[93%] h-16 pb-2 bg-primaryColor flex items-center justify-between  rounded-lg shadow-xl">
+    <header className="w-[93%] h-16 pb-2 bg-primaryColor flex items-center justify-between rounded-lg shadow-xl">
       <Link to={"/"} className="flex items-center">
         <figure className="flex items-center space-x-3 ">
           <LogoCQ size={50} />
@@ -29,11 +29,6 @@ export default function HeaderHome() {
         <Link to={"/"}>
           <button className="text-white underlineAnimado cursor-pointer">
             Quem pode Jogar?
-          </button>
-        </Link>
-        <Link to={"/"}>
-          <button className="text-white underlineAnimado cursor-pointer">
-            Contato
           </button>
         </Link>
         <button className="text-white underlineAnimado cursor-pointer">
