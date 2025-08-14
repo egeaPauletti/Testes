@@ -14,3 +14,8 @@ export interface SquareData {
 export interface WaveTextProps {
   text: string;
 }
+
+export interface BtnProps{
+    label: string,
+    filled?: boolean
+}

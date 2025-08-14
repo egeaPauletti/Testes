@@ -22,7 +22,7 @@ const HomeScreen = () => {
             <div className="flex gap-[3rem]">
               <WaveText text="Alcance a" />
               <div className="primaryColor">
-                <WaveText text={"exelencia"} />
+                <WaveText text={"exelência"} />
               </div>
             </div>
             <WaveText text="em programação!" />
