@@ -19,6 +19,7 @@ function renderApp() {
       <Route path="/" element={<HomeScreen />} />
       <Route path="/about" element={<AboutScreen />} />
       <Route path="/login" element={<AuthScreen />} />
+      <Route path="/register" element={<AuthScreen />} />
     </Routes>
   );
 }

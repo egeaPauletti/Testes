@@ -38,10 +38,10 @@ export default function Header() {
       </nav>
       <div className="flex items-center gap-5">
         <Link to="/login">
-        <Button label="Entrar"/>
+          <Button label="Entrar" />
         </Link>
-        <Link to="/login">
-        <Button label="Registrar" filled />
+        <Link to="/register">
+          <Button label="Registrar" filled />
         </Link>
       </div>
     </header>

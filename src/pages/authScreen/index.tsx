@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
 import LogoCQ from "../../components/LogoCQ";
 import Button from "../../components/Button";
@@ -8,6 +8,19 @@ import RegiserField from "../../components/AuthScreen/RegisterField";
 
 const AuthScreen: React.FC = () => {
   const [isLogin, setIsLogin] = useState(true);
+  //
+  const currentUrl = window.location.href;
+  const url = new URL(currentUrl);
+  const pathSegments = url.pathname.split("/").filter(Boolean);
+  const endpoint = pathSegments[pathSegments.length - 1];
+
+  useEffect(() => {
+    if (endpoint == "login") {
+      setIsLogin(true);
+    } else {
+      setIsLogin(false);
+    }
+  }, [endpoint]);
 
   return (
     <div className="backgroundAuth w-screen h-screen">
