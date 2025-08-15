@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .backgroundAuth {
-  background-color: #222222;
+  background-color: #202020;
   background-size: cover;
 }
 
@@ -54,4 +54,8 @@
 
 .right-active .forms-container {
   transform: translateX(-40%);
+}
+
+.animationFadeInAuth {
+  animation: fadeIn 3s;
 }

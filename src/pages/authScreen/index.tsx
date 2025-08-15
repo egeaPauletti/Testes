@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import "./style.css";
+import "./index.css";
 import LogoCQ from "../../components/LogoCQ";
 import Button from "../../components/Button";
 import { FloatingSquares } from "../../components/FloatingSquares";
 import LoginField from "../../components/AuthScreen/LoginField";
+import RegiserField from "../../components/AuthScreen/RegisterField";
 
 const AuthScreen: React.FC = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -13,9 +14,9 @@ const AuthScreen: React.FC = () => {
       <div className="top-0 left-0 absolute z-1 h-screen w-screen flex justify-center items-center backgroundPixelado"></div>
       <div className="z-100 relative">
         <div className={`main-container ${isLogin ? "" : "right-active"}`}>
-          <div className="slider-panel gap-[10%] flex justify-center items-center relative -top-[0%] ">
+          <div className="slider-panel gap-[10%] flex justify-center items-center">
             <FloatingSquares isLogin />
-            <div className="flex flex-col justify-center items-center gap-15 p-10 glasseffect">
+            <div className="flex flex-col justify-center items-center gap-15 p-10 glasseffect relative -top-[10%]">
               <div className="bgSecondColor p-2 rounded-2xl">
                 <LogoCQ size={70} />
               </div>
@@ -48,7 +49,7 @@ const AuthScreen: React.FC = () => {
               </button>
             </div>
           </div>
-          <div>{isLogin ? <LoginField /> : <Button label="teste" />}</div>
+          <div>{isLogin ? <LoginField /> : <RegiserField />}</div>
         </div>
       </div>
     </div>
