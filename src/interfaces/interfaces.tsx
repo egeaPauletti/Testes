@@ -11,11 +11,15 @@ export interface SquareData {
   className?: string; // <- nova propriedade
 }
 
+export interface FloatingSquareProps {
+  isLogin?: boolean;
+}
+
 export interface WaveTextProps {
   text: string;
 }
 
-export interface BtnProps{
-    label: string,
-    filled?: boolean
+export interface BtnProps {
+  label: string;
+  filled?: boolean;
 }

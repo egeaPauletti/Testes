@@ -22,7 +22,9 @@ body {
 :root {
   --primary-color: #2ea98c;
   --white-color: #f1f7f7;
+  --second-color: #222222;
 }
+
 /* Primary Color */
 .primaryColor {
   color: var(--primary-color);
@@ -36,7 +38,22 @@ body {
   color: var(--white-color);
 }
 
+.secondColor {
+  color: var(--second-color);
+}
+
+.bgSecondColor {
+  background-color: var(--second-color);
+}
+
 /* --------------------- */
 .logoBackground {
   clip-path: circle(50% at 50% 50%);
+}
+
+.glasseffect {
+  background: rgba(30, 30, 30, 0.1);
+  border-radius: 16px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
 }
