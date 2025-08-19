@@ -4,7 +4,7 @@ import type { WorldsData } from "../../interfaces/interfaces";
 import "./index.css";
 import Button from "../../components/Button";
 
-const WorldsScreen: React.FC = () => {
+const ChoseWorld: React.FC = () => {
   const WorldsDataSection1: WorldsData[] = [
     { id: "1", worldName: "O começo" },
     { id: "2", worldName: "Uma condição" },
@@ -51,4 +51,4 @@ const WorldsScreen: React.FC = () => {
   );
 };
 
-export default WorldsScreen;
+export default ChoseWorld;
