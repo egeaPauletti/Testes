@@ -141,3 +141,19 @@
 .animationsdelay1s {
   animation-delay: 1s;
 }
+
+/*  */
+.sliderWorlds {
+  animation: sliderWorlds 1s ease-in forwards;
+}
+
+@keyframes sliderWorlds {
+  from {
+    transform: translateX(1000%) skew(-10deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) skew(-10deg);
+    opacity: 1;
+  }
+}

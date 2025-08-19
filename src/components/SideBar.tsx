@@ -4,7 +4,7 @@ import { FaCog, FaSignOutAlt } from "react-icons/fa";
 import { TbHomeFilled, TbMapRoute } from "react-icons/tb";
 import { LuCalendarDays } from "react-icons/lu";
 import LogoCQ from "./LogoCQ";
-import type { NavItem } from "../interfaces/interfaces";
+import type { NavData } from "../interfaces/interfaces";
 
 const Sidebar: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -12,20 +12,20 @@ const Sidebar: React.FC = () => {
 
   const isActive = (path?: string) => location.pathname === path;
 
-  const section1: NavItem[] = [
+  const section1: NavData[] = [
     { icon: <LogoCQ size={50} />, label: "CodingQuest", to: "/home" },
   ];
-  const section1small: NavItem[] = [
+  const section1small: NavData[] = [
     { icon: <LogoCQ size={40} />, label: "CodingQuest", to: "/home" },
   ];
 
-  const section2: NavItem[] = [
+  const section2: NavData[] = [
     { icon: <TbHomeFilled />, label: "Tela inicial", to: "/home" },
     { icon: <LuCalendarDays />, label: "Desafio diário", to: "/diarychal" },
     { icon: <TbMapRoute />, label: "Modo campanha", to: "/campaign" },
   ];
 
-  const section3: NavItem[] = [
+  const section3: NavData[] = [
     { icon: <FaCog />, label: "Configurações" },
     { icon: <FaSignOutAlt />, label: "Sair" },
   ];
@@ -47,9 +47,9 @@ const Sidebar: React.FC = () => {
         >
           {section1.map((item, index) => (
             <Link
-              to={item.to || "/"}
+              to={item.to}
               key={index}
-              className="hidden 2xl:flex items-center gap-2 cursor-pointer rounded-md w-full"
+              className="hidden 2xl:flex items-center gap-2 rounded-md w-full"
             >
               <span>{item.icon}</span>
               {isExpanded && (
@@ -68,9 +68,9 @@ const Sidebar: React.FC = () => {
         >
           {section1small.map((item, index) => (
             <Link
-              to={item.to || "/"}
+              to={item.to}
               key={index}
-              className="flex 2xl:hidden items-center gap-2 cursor-pointer rounded-md w-full"
+              className="flex 2xl:hidden items-center gap-2 rounded-md w-full"
             >
               <span>{item.icon}</span>
               {isExpanded && (
@@ -89,9 +89,9 @@ const Sidebar: React.FC = () => {
           <Link
             to={item.to || "/"}
             key={index}
-            className={`flex items-center gap-2 2xl:gap-4 cursor-pointer rounded-md w-full ${
+            className={`flex items-center gap-2 2xl:gap-4 cursor-pointer w-full ${
               isActive(item.to)
-                ? "text-[#2ea98c] opacity-100 font-semibold"
+                ? "text-[#2ea98c] opacity-100 font-semibold border-l-2"
                 : "opacity-50 hover:text-[#2ea98c] hover:scale-110"
             } transition-all duration-200`}
           >
@@ -111,9 +111,9 @@ const Sidebar: React.FC = () => {
           <Link
             to={item.to || "/"}
             key={index}
-            className={`flex items-center gap-2 2xl:gap-4 cursor-pointer rounded-md w-full ${
+            className={`flex items-center gap-2 2xl:gap-4 cursor-pointer w-full ${
               isActive(item.to)
-                ? "text-[#2ea98c] opacity-100 font-semibold"
+                ? "text-[#2ea98c] opacity-100 font-semibold border-l-2"
                 : "opacity-50 hover:text-[#2ea98c] hover:scale-110"
             } transition-all duration-200`}
           >

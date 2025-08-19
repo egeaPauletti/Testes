@@ -24,9 +24,15 @@ export interface BtnProps {
   filled?: boolean;
 }
 
-export type NavItem = {
+export type NavData = {
   icon: React.ReactNode;
   label: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   to?: string | any;
+};
+
+export type WorldsData = {
+  id: string;
+
+  worldName: string;
 };

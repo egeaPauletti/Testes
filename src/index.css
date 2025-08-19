@@ -4,7 +4,7 @@ body {
   background-image: url(./assets/backgrounds/background.png);
   background-size: cover;
   background-repeat: no-repeat;
-  font-size: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   overflow: hidden;
 }
 
@@ -23,7 +23,7 @@ body {
   --primary-color: #2ea98c;
   --white-color: #f1f7f7;
   --second-color: #222222;
-  --third-color: #1d1d1d;
+  --third-color: #111111;
   --fourth-color: #212121;
   --side-title-color: #404040;
 }

@@ -11,7 +11,3 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.teste{
-   transform: perspective(500px) rotatex(40deg);
-}
