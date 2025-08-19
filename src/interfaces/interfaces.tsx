@@ -23,3 +23,10 @@ export interface BtnProps {
   label: string;
   filled?: boolean;
 }
+
+export type NavItem = {
+  icon: React.ReactNode;
+  label: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  to?: string | any;
+};
