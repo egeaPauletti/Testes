@@ -16,7 +16,7 @@ const Sidebar: React.FC = () => {
     { icon: <LogoCQ size={50} />, label: "CodingQuest", to: "/home" },
   ];
   const section1small: NavItem[] = [
-    { icon: <LogoCQ size={45} />, label: "CodingQuest", to: "/home" },
+    { icon: <LogoCQ size={40} />, label: "CodingQuest", to: "/home" },
   ];
 
   const section2: NavItem[] = [
