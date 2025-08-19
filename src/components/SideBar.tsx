@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link, matchPath } from "react-router-dom";
 import { FaCog, FaSignOutAlt } from "react-icons/fa";
 import { TbHomeFilled, TbMapRoute } from "react-icons/tb";
 import { LuCalendarDays } from "react-icons/lu";
@@ -10,7 +10,15 @@ const Sidebar: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const location = useLocation();
 
-  const isActive = (path?: string) => location.pathname === path;
+  const isActive = (path?: string | string[]) => {
+    if (!path) return false;
+
+    const paths = Array.isArray(path) ? path : [path];
+
+    return paths.some((p) =>
+      matchPath({ path: p, end: false }, location.pathname)
+    );
+  };
 
   const section1: NavData[] = [
     { icon: <LogoCQ size={50} />, label: "CodingQuest", to: "/home" },
@@ -22,7 +30,12 @@ const Sidebar: React.FC = () => {
   const section2: NavData[] = [
     { icon: <TbHomeFilled />, label: "Tela inicial", to: "/home" },
     { icon: <LuCalendarDays />, label: "Desafio diário", to: "/diarychal" },
-    { icon: <TbMapRoute />, label: "Modo campanha", to: "/campaign" },
+    {
+      icon: <TbMapRoute />,
+      label: "Modo campanha",
+      to: "/campaign",
+      matchPaths: ["/campaign", "/worlds/*"],
+    },
   ];
 
   const section3: NavData[] = [
@@ -90,7 +103,7 @@ const Sidebar: React.FC = () => {
             to={item.to || "/"}
             key={index}
             className={`flex items-center gap-2 2xl:gap-4 cursor-pointer w-full ${
-              isActive(item.to)
+              isActive(item.matchPaths || item.to)
                 ? "text-[#2ea98c] opacity-100 font-semibold border-l-2"
                 : "opacity-50 hover:text-[#2ea98c] hover:scale-110"
             } transition-all duration-200`}

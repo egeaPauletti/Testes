@@ -11,6 +11,7 @@ import AuthScreen from "./pages/authScreen";
 import InitialScreen from "./pages/initialScreen";
 import HomeScreen from "./pages/homeScreen";
 import ChoseWorld from "./pages/choseWorldScreem";
+import WorldScreen from "./pages/WorldScreen";
 
 function renderLoader() {
   return <PreLoader />;
@@ -25,7 +26,7 @@ function renderApp() {
       <Route path="/register" element={<AuthScreen />} />
       <Route path="/home" element={<HomeScreen />} />
       <Route path="/campaign" element={<ChoseWorld />} />
-      <Route path="/worlds/*" element={<ChoseWorld />} />
+      <Route path="/worlds/*" element={<WorldScreen />} />
     </Routes>
   );
 }

@@ -24,12 +24,22 @@ export interface BtnProps {
   filled?: boolean;
 }
 
-export type NavData = {
+// export type NavData = {
+//   icon: React.ReactNode;
+//   label: string;
+//   // eslint-disable-next-line @typescript-eslint/no-explicit-any
+//   to?: string | any;
+
+//   matchPath?: string[];
+// };
+
+export interface NavData {
   icon: React.ReactNode;
   label: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   to?: string | any;
-};
+  matchPaths?: string[];
+}
 
 export type WorldsData = {
   id: string;
