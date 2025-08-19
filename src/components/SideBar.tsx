@@ -42,18 +42,14 @@ const Sidebar: React.FC = () => {
       <div>
         <div
           className={`flex flex-col items-start gap-4 relative ${
-            isExpanded ? "-left-[5%]" : "-left-[32%]"
+            isExpanded ? "-left-[5%]" : "-left-[30%]"
           }`}
         >
           {section1.map((item, index) => (
             <Link
               to={item.to || "/"}
               key={index}
-              className={`hidden 2xl:flex items-center gap-2 cursor-pointer rounded-md w-full ${
-                isActive(item.to)
-                  ? "text-[#2ea98c] opacity-100"
-                  : "opacity-50 hover:text-[#2ea98c] hover:scale-110"
-              } transition-all duration-200`}
+              className="hidden 2xl:flex items-center gap-2 cursor-pointer rounded-md w-full"
             >
               <span>{item.icon}</span>
               {isExpanded && (
@@ -74,11 +70,7 @@ const Sidebar: React.FC = () => {
             <Link
               to={item.to || "/"}
               key={index}
-              className={`flex items-center gap-2 cursor-pointer rounded-md w-full ${
-                isActive(item.to)
-                  ? "text-[#2ea98c] opacity-100"
-                  : "opacity-50 hover:text-[#2ea98c] hover:scale-110"
-              } transition-all duration-200`}
+              className="flex 2xl:hidden items-center gap-2 cursor-pointer rounded-md w-full"
             >
               <span>{item.icon}</span>
               {isExpanded && (
