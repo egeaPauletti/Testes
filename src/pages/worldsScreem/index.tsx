@@ -36,7 +36,7 @@ const WorldsScreen: React.FC = () => {
                 <span className="primaryColor text-sm 2xl:text-base font-bold w-max">
                   Mundo {item.id}
                 </span>
-                <span className="whiteColor ibm text-xs 2xl:text-base w-max">
+                <span className="whiteColor ibm text-xs 2xl:text-base w-max opacity-70 2xl:opacity-100">
                   {item.worldName}
                 </span>
               </div>
