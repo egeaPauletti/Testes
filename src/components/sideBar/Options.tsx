@@ -3,32 +3,32 @@ import type { OptionProps } from "../../interfaces/interfaces";
 
 const Option = ({ Icon, title, open, isCurrent }: OptionProps) => {
   return (
-    <motion.button
-      layout
-      className={`relative flex h-10 w-full items-center transition-colors cursor-pointer   ${
-        isCurrent
-          ? "primaryColor border-l-2"
-          : "whiteColor opacity-50  hover:text-[#2ea98c]"
-      }`}
-    >
-      <motion.div
+    <div className="whiteColor">
+      <motion.button
         layout
-        className=" h-full w-10 flex justify-center items-center"
+        className={` flex h-10 w-full items-center cursor-pointer hover:text-[#2ea98c]  ${
+          isCurrent ? "primaryColor border-l-2 " : " opacity-50 "
+        }`}
       >
-        {Icon}
-      </motion.div>
-      {open && (
-        <motion.span
+        <motion.div
           layout
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.125 }}
-          className="text-xs font-medium relative top-[2.5%]"
+          className=" h-full w-10 flex justify-center items-center "
         >
-          {title}
-        </motion.span>
-      )}
-    </motion.button>
+          {Icon}
+        </motion.div>
+        {open && (
+          <motion.span
+            layout
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.125 }}
+            className="text-xs font-medium relative top-[2.5%]"
+          >
+            {title}
+          </motion.span>
+        )}
+      </motion.button>
+    </div>
   );
 };
 
