@@ -16,7 +16,6 @@ const ChoseWorld: React.FC = () => {
     <div className="w-screen h-screen flex justify-center items-center bgFourthColor">
       <div className="w-full h-full backgroundPixelado flex justify-center items-center absolute top-0 left-0 z-50"></div>
       <Sidebar />
-      <div className="w-[1.5%] h-full bg-[#1a1a1a80] flex justify-center items-center left-0 top-0 absolute z-50"></div>
       <div className="w-full h-full flex flex-col justify-center items-center gap-10 z-90">
         <div className="whiteColor bgThirdColor w-[25%] h-[5%] flex items-center justify-center text-xs 2xl:text-base font-semibold rounded-lg 2xl:rounded-xl">
           Escolha um mundo

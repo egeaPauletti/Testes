@@ -3,7 +3,7 @@ import LogoCQ from "../LogoCQ";
 
 const TitleSection = ({ open }: { open: boolean }) => {
   return (
-    <div className="my-3  pb-3">
+    <div className="my-3 pb-3">
       <div className="flex cursor-pointer items-center justify-between">
         <div className="flex items-center gap-2">
           <LogoCQ size={60} />
