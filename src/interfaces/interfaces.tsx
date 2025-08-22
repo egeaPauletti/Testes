@@ -3,8 +3,8 @@ export interface IconsProps {
 }
 
 export interface SquareData {
-  x: number;
-  y: number;
+  x: string;
+  y: string;
   width: number;
   height: number;
   icon?: React.ReactNode;
