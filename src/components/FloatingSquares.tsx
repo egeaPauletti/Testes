@@ -2,15 +2,15 @@ import React, { useRef } from "react";
 //
 import type { FloatingSquareProps, SquareData } from "../interfaces/interfaces";
 //
-import JavaIcon from "./icons/iconsLanguages/JavaIcon";
-import PythonIcon from "./icons/iconsLanguages/PythonIcon";
 import CIcon from "./icons/iconsLanguages/CIcon";
-import RubyIcon from "./icons/iconsLanguages/RubyIcon";
-import JSIcon from "./icons/iconsLanguages/JSIcon";
-import GOIcon from "./icons/iconsLanguages/GOIcon";
-import LuaIcon from "./icons/iconsLanguages/LuaIcon copy";
 import DartIcon from "./icons/iconsLanguages/DartIcon";
+import GOIcon from "./icons/iconsLanguages/GOIcon";
+import JavaIcon from "./icons/iconsLanguages/JavaIcon";
+import JSIcon from "./icons/iconsLanguages/JSIcon";
 import KotlinIcon from "./icons/iconsLanguages/KotlinIcon";
+import LuaIcon from "./icons/iconsLanguages/LuaIcon copy";
+import PythonIcon from "./icons/iconsLanguages/PythonIcon";
+import RubyIcon from "./icons/iconsLanguages/RubyIcon";
 
 const squarePositions: SquareData[] = [
   { x: 900, y: 200, width: 90, height: 90, icon: <JavaIcon size={50} /> },

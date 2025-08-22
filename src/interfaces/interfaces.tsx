@@ -41,8 +41,15 @@ export interface NavData {
   matchPaths?: string[];
 }
 
-export type WorldsData = {
+export interface WorldsData {
   id: string;
 
   worldName: string;
-};
+}
+
+export interface OptionProps {
+  Icon: React.ReactNode;
+  title: string;
+  isCurrent?: boolean;
+  open: boolean;
+}

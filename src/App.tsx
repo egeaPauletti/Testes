@@ -1,16 +1,16 @@
-import "./index.css";
 import "./animations/animations.css";
+import "./index.css";
 //
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 //
 import PreLoader from "./pages/preLoader";
 
 import AboutScreen from "./pages/aboutScreen";
 import AuthScreen from "./pages/authScreen";
-import InitialScreen from "./pages/initialScreen";
-import HomeScreen from "./pages/homeScreen";
 import ChoseWorld from "./pages/choseWorldScreem";
+import HomeScreen from "./pages/homeScreen";
+import InitialScreen from "./pages/initialScreen";
 import WorldScreen from "./pages/WorldScreen";
 
 function renderLoader() {

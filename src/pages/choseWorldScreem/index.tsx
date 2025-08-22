@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import Sidebar from "../../components/SideBar";
+import Button from "../../components/Button";
+import Sidebar from "../../components/sideBar/SideBar";
 import type { WorldsData } from "../../interfaces/interfaces";
 import "./index.css";
-import Button from "../../components/Button";
 
 const ChoseWorld: React.FC = () => {
   const WorldsDataSection1: WorldsData[] = [

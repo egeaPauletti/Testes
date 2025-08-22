@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import "./index.css";
-import LogoCQ from "../../components/LogoCQ";
-import Button from "../../components/Button";
-import { FloatingSquares } from "../../components/FloatingSquares";
 import LoginField from "../../components/AuthScreen/LoginField";
 import RegiserField from "../../components/AuthScreen/RegisterField";
+import Button from "../../components/Button";
+import { FloatingSquares } from "../../components/FloatingSquares";
+import LogoCQ from "../../components/LogoCQ";
+import "./index.css";
 
 const AuthScreen: React.FC = () => {
   const [isLogin, setIsLogin] = useState(true);
