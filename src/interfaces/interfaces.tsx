@@ -22,16 +22,8 @@ export interface WaveTextProps {
 export interface BtnProps {
   label: string;
   filled?: boolean;
+  onClick?: () => void;
 }
-
-// export type NavData = {
-//   icon: React.ReactNode;
-//   label: string;
-//   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-//   to?: string | any;
-
-//   matchPath?: string[];
-// };
 
 export interface NavData {
   icon: React.ReactNode;
